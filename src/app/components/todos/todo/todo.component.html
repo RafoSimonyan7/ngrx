@@ -1,0 +1,5 @@
+<form>
+  <input  [(ngModel)]="name" [ngModelOptions]="{standalone: true}" type="text" value="{{name}}">
+  <button (click)="addTodo()">Add</button>
+</form>
+<app-todo-list [todos]="todos"></app-todo-list>
